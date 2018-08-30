@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>SignUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+#SignUpback{ float:left;margin-left:35vw;margin-top:3vw;width:42vw;height:38vw;background:#222A26;position:relative;}
+.button3{background-color:#3E594C;border:none; padding:1.1vw;cursor: pointer;width:17vw;font-size:1.3vw;color:white;position:relative;}
+.enterinputs{
+	      width:15.5vw;
+         
+		  border:1px solid #545957;
+		 position:relative;
+		  margin-left:1vw;
+		  background-color:#222A26;
+		  padding:0.8vw;
+		  margin-top:1vw;color:white;
+		  font-size:1.3vw;}
+#infosignup{display:block;}
+#infoLogin{display:none;}
+#tagline1{display:block;}
+a{color:#46C17F;
+		  text-decoration: none;
+		  }
+	 a:hover{color:grey;cursor: pointer;}
+	  p {
+	     
+		  font-size:1.3vw;
+		 }
+		 .button3:hover{box-shadow:4px 8px 8px 0px #304139;}
+.enterinputs:hover{box-shadow:4px 4px 8px 0px #304139;border:1px solid #46C17F;}
+</style>
+<script type="text/javascript">
+   var image1=new Image()
+   image1.src="images/image11.jpg"
+    var image2=new Image()
+   image2.src="images/image12.jpg"
+    var image3=new Image()
+   image3.src="images/image13.jpg"
+    var image4=new Image()
+   image4.src="images/image21.jpg"
+    var image5=new Image()
+   image5.src="images/image22.jpg"
+    var image6=new Image()
+   image6.src="images/image23.jpg"
+   
+   </script>
+<body>
+<div style="margin-top:4vw;"><center><h1 style=" font-family:Californian FB;"><a style="color:black;" href="">G A L L E R I A </a></h1></center></div>
+<div style="float:left;position:relative;margin-left:15vw;">
+<image src="images/backgroundphone2.png" style="width:27vw;position:absolute;margin-left:-10vw;margin-top:-2vw;"/>
+<image src="images/image1.jpg" name="slides" style="position:absolute;width:19vw;height:32.6vw;margin-top:3vw;margin-left:-6vw;border:0.2vw solid black;border-radius:0.4vw;"/>
+<script type="text/javascript">
+		                  var step=1
+		                  function slidesit(){
+		                  document.images.slides.src=eval("image"+step+".src")
+		                  if(step<6)
+		                  step++
+		                  else
+		                  step=1
+		                  setTimeout("slidesit()",2000)
+		                  }
+		                  slidesit()
+		            </script>
+<image src="images/backgroundphone.png" style="width:27vw;position:absolute;"/>
+<image src="images/image1.jpg" name="slide" style="position:absolute;width:19vw;height:32.3vw;margin-top:6.5vw;margin-left:3.8vw;border:0.2vw solid black;border-radius:0.4vw;"/>
+<script type="text/javascript">
+		                  var step=1
+		                  function slideit(){
+		                  document.images.slide.src=eval("image"+step+".src")
+		                  if(step<6)
+		                  step++
+		                  else
+		                  step=1
+		                  setTimeout("slideit()",2000)
+		                  }
+		                  slideit()
+		            </script>
+<div id="SignUpback">
+<div style="float:left;display:inline-block;margin-left:4vw;margin-top:2vw;">
+<button id="btn1" class="button3"  style="background-color:#46C17F;">SignUp</button></div>
+<div style="float:left;display:inline-block;margin-left:0vw;margin-top:2vw;">
+<button id="btn2" class="button3" >LogIn</button>
+</div>
+<div  style="clear:both;position:absolute;margin-top:6vw;margin-left:14vw;">
+<h1 id="tagline1" style="font-size:2vw;color:white;">Sign Up For Free</h1>
+</div>
+<div id="infosignup" style="clear:both;position:absolute;margin-top:12vw;margin-left:4vw;">
+<form action="http://localhost/htmph/inserthtml1.php" method="post" autocomplete="off">
+  <input type="text" class="enterinputs" placeholder="First Name" name="fname" required>
+   <input type="text" class="enterinputs" placeholder="Last Name" name="lname" required><br>
+    <input type="text" class="enterinputs" placeholder="Email Address" name="email" style="width:32.3vw;" required><br>
+    <input type="password" class="enterinputs" placeholder="Set A Password" name="newpassword" style="width:32.3vw;" required>
+	<button class="button3" style="width:34vw;background-color:#46C17F;margin-top:3vw;">GET STARTED</button>
+	<p style="font-size:0.9vw;color:white;">By clicking below to sign up, you are agreeing to the Galleria <a>Terms of Service</a></p>
+
+</form> </div>
+
+<div id="infoLogin" style="clear:both;position:absolute;margin-top:12vw;margin-left:4vw;">
+<form action="" autocomplete="off">
+  
+   <input type="text" class="enterinputs" placeholder="Email" name="userid" style="width:32.3vw;" required><br>
+   
+    <input type="password" class="enterinputs" placeholder="Enter Password" name="Password" style="width:32.3vw;" required>
+	<button class="button3" style="width:34vw;background-color:#46C17F;margin-top:3vw;">LOG IN</button>
+</form> <p><a href="">Forgotten Password? </a></p></div>
+<script>
+ var  signupcontent= document.getElementById('infosignup');
+  var logincontent = document.getElementById('infoLogin');
+   var tagcontent = document.getElementById('tagline1');
+   var btn11 = document.getElementById('btn1');
+  var btn12 = document.getElementById('btn2');
+   btn12.onclick = function()
+   { btn12.style.background = "#46C17F";
+   btn11.style.background = "#3E594C";signupcontent.style.display = "none"; tagcontent.style.display ="none";
+   logincontent.style.display ="block";
+   }
+    btn11.onclick = function()
+   { btn11.style.background = "#46C17F";
+   btn12.style.background = "#3E594C";signupcontent.style.display = "block"; tagcontent.style.display ="block";
+   logincontent.style.display ="none";
+   }
+   
+</script>
+
+</div>
+</div>
+
+
+
+</body>	
+</html>	   
